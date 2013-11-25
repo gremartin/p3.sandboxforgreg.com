@@ -2,9 +2,40 @@
 <html>
 <head>
 <title>Javascript Scale/Mode Finder</title>
+<link rel="stylesheet" href="css/scale-finder.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </head>
 <body>
-
+	<div id="page">
+		<form id="root_selector">
+			<p>Select your root note</p>
+			<select id="root_note">
+				<option>C</option>
+				<option>D</option>
+				<option>E</option>
+				<option>F</option>
+				<option>G</option>
+				<option>A</option>
+				<option>B</option>
+			</select>
+			<p>Accidental</p>
+			<select id="accidental">
+				<option>natural</option>
+				<option>#</option>
+				<option>b</option>
+			</select>
+		</form>
+		<form id = "scale_selector">
+			<p>Scale/Mode</p>
+			<select name="scale">
+				<option>major</option>
+				<option>minor</option>
+			</select>				
+		</form>
+		<div id="button">Get Scale</div> <!-- Div for action button-->
+	</div> <!--end page div-->
+<script src="js/scale-finder.js"></script>
 <body>
 </html>
 
