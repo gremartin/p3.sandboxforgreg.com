@@ -1,7 +1,15 @@
-#root_selector{
+#user_input{
 	width: 300px;
-	height: 300px;
+	height: 400px;
 	border: 1px solid black;
+	float: left;
+}
+#output{
+	width: 450px;
+	height: 400px;
+	border: 1px solid black;
+	float:left;
+	font-family: serif;
 }
 #button{
 	width: 150px;
