@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content ="text/html;charset=utf-8">
 <title>Javascript Scale/Mode Finder</title>
 <link rel="stylesheet" href="css/scale-finder.css" type="text/css">
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script> -->
@@ -40,6 +40,20 @@
 		</div> <!-- end of user_input div-->
 		<div id="output">
 			<div id="scale_output"></div>
+			<div id="g_space" class="staff"></div>
+			<div id="f_line" class="staff" ></div>
+			<div id="e_space"class="staff"></div>
+			<div id="d_line"class="staff" ></div>
+			<div id="c_space" class="staff"></div>
+			<div id="b_line" class="staff" ></div>
+			<div id="a_space" class="staff"></div>
+			<div id="g_line" class="staff"></div>
+			<div id="f_space"class="staff" ><img id="note" src='images/circle.png'/></div>
+			<div id="e_line" class="staff" ><img id="note" src='images/circle.png'/></div>
+			<div id="d_space" class="staff"></div>
+			<div id="c_line" class="staff"></div>
+			<div id="b_space" class="staff"></div>
+			<div id="a_line"class="staff" ></div>
 		</div> <!--end outputdiv-->
 	</div> <!--end page div-->
 <script src="js/scale-finder.js"></script>

@@ -1,3 +1,20 @@
+.staff{
+	height: 8px;
+}
+#f_line, #d_line, #b_line, #g_line, #e_line{
+	background-image: url("../images/line.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	
+}
+img#note{
+	float:left;
+	margin-left: 10px;
+	margin-top: -5px;
+}
+	
+
+
 #user_input{
 	width: 300px;
 	height: 400px;
