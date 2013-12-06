@@ -36,6 +36,7 @@ var user_scale=[];
 
 
 $('#button').click(function(){
+	$('.note_images').remove();
 	/*if note is natural, leave out accidental*/
 	if(($('#accidental option:selected').text()) == 'natural'){
 		//retrieve tonic note from user
@@ -68,7 +69,7 @@ $('#button').click(function(){
 	}
 	//draw notes to grid:
 	//first, start with scales to be started on spaces
-	if((user_scale[0].charAt() == "B")){
+	if(user_scale[0].charAt() == "B" || user_scale[0].charAt() == "D" || user_scale[0].charAt() == "F" ){
 		for(var i = 0; i < user_scale.length; i++){
 			//get first letter of div for note to be drawn to
 			var div_id = user_scale[i].charAt();
@@ -76,14 +77,43 @@ $('#button').click(function(){
 					div_id = "#" + div_id.toLowerCase() + "_space";
 				}
 				else div_id = "#" + div_id.toLowerCase() + "_line";
-				var img_str = "<div id='img_" + i +"'><img src='images/whole_note.png'/></div>";
+				//determine what accidental is included in each note
+				var accidental = user_scale[i].substring(1);
+				//display notes with sharps
+				if(accidental=='&#9839'){
+					//create string to add image, add id for styling
+					var img_str = "<div class ='note_images' id='img_" + i +"'><img src='images/whole_note_sharp.png'/></div>";
+					console.log(img_str);
+					$(div_id).append(img_str);
+					$('#img_'+i).css('margin-left', ((i*55)+44) +'px');
+					//$('#img_'+i).css('padding-right', '10px');
+					div_id = '';
+					}
+				else {
+					//create string to add image, add id for styling
+					var img_str = "<div class ='note_images' id='img_" + i +"'><img src='images/whole_note.png'/></div>";
+					console.log(img_str);
+					$(div_id).append(img_str);					
+					$('#img_'+i).css('margin-left', (i+1)*55 +'px');
+					div_id = ''
+					}
+				}
+		
+		
+		
+	}
+	//else statement for scales starting on lines
+	else{
+		for(var i = 0; i < user_scale.length; i++){
+			//get first letter of div for note to be drawn to
+			var div_id = user_scale[i].charAt();
+				if(i % 2 == 0){
+					div_id = "#" + div_id.toLowerCase() + "_line";
+				}
+				else div_id = "#" + div_id.toLowerCase() + "_space";
+				var img_str = "<div class ='note_images' id='img_" + i +"'><img src='images/whole_note.png'/></div>";
 				console.log(img_str);
 				$(div_id).append(img_str);
-				//create new class for each div with 
-				//$(div_id).addClass('note_' + i);
-				/*var number_px = (90 * i) +'px';
-				console.log(number_px);
-				$('#img_'+i +'').css('margin-left', 'number_px');*/
 				div_id = '';
 		}
 		

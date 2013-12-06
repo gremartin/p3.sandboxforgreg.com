@@ -39,22 +39,24 @@
 			<div id="button">Get Scale</div> <!-- Div for action button-->
 		</div> <!-- end of user_input div-->
 		<div id="output">
-			<div id="clef"><img src='images/treble_clef.png'/></div>
-			<div id="g_space" class="staff"></div>
-			<div id="f_line" class="staff" ></div>
-			<div id="e_space"class="staff"></div>
-			<div id="d_line"class="staff" ></div>
-			<div id="c_space" class="staff"></div>
-			<div id="b_line" class="staff" ></div>
-			<div id="a_space" class="staff"></div>
-			<div id="g_line" class="staff"></div>
-			<div id="f_space"class="staff" ></div>
-			<div id="e_line" class="staff" ></div>
-			<div id="d_space" class="staff"></div>
-			<div id="c_line" class="staff"></div>
-			<div id="b_space" class="staff"></div>
-			<div id="a_line" class="staff" ></div>			
-			<div id="scale_output"></div>
+			<div id="display">
+				<div id="clef"><img src='images/treble_clef.png'/></div>
+				<div id="g_space" class="staff"></div>
+				<div id="f_line" class="staff" ></div>
+				<div id="e_space"class="staff"></div>
+				<div id="d_line"class="staff" ></div>
+				<div id="c_space" class="staff"></div>
+				<div id="b_line" class="staff" ></div>
+				<div id="a_space" class="staff"></div>
+				<div id="g_line" class="staff"></div>
+				<div id="f_space"class="staff" ></div>
+				<div id="e_line" class="staff" ></div>
+				<div id="d_space" class="staff"></div>
+				<div id="c_line" class="staff"></div>
+				<div id="b_space" class="staff"><div id="ledger_line"></div></div>
+				<div id="a_line" class="staff" ></div>			
+				<div id="scale_output"></div>
+			</div> <!--end display div-->
 		</div> <!--end outputdiv-->
 	</div> <!--end page div-->
 <script src="js/scale-finder.js"></script>
