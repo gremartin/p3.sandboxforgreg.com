@@ -1,20 +1,49 @@
 .staff{
 	height: 8px;
+	
+}
+.staff img{
+	
 }
 #f_line, #d_line, #b_line, #g_line, #e_line{
 	background-image: url("../images/line.png");
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 100%;
 	
 }
-img#note{
+#clef{
 	float:left;
-	margin-left: 10px;
+	margin-left: 4px;
 	margin-top: -5px;
 }
+#img_0 img{	
+	margin-left: 25px;
+	margin-top: -5px;	
+}
+#img_1 img{	
+	margin-left: 70px;
 	
-
-
+}
+#img_2 img{	
+	margin-left: 115px;	
+}
+#img_3 img{	
+	margin-left: 160px;	
+}
+#img_4 img{
+	
+	margin-left: 205px;	
+}
+#img_5 img{
+	
+	margin-left: 250px;	
+}
+#img_6 img{	
+	margin-left: 295px;
+}	
+#img_7 img{
+	margin-left: 340px;
+}
 #user_input{
 	width: 300px;
 	height: 400px;
@@ -26,7 +55,7 @@ img#note{
 	height: 400px;
 	border: 1px solid black;
 	float:left;
-	font-family: serif;
+	font-family: fantasy;
 }
 #button{
 	width: 150px;

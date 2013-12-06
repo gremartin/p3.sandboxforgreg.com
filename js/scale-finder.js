@@ -50,22 +50,46 @@ $('#button').click(function(){
 	//assign variable to match against tonic_notes indexes
 	var tonic_array = tonic.toLowerCase() + "_notes";
 	console.log(tonic_array);
+	//get notes array to choose scale notes from
 	for(i in tonic_notes){
 		if(i == tonic_array)
 		notes = tonic_notes[i];	
 	}
+	//get scales array to choose notes from notes array
 	for(i in scales){
 		if(i == selected_scale)
 		scale_indexes = scales[i];	
 	}
 	console.log(scale_indexes);
 	console.log(notes);	
-	var degree = 0;
-	for(i in scale_indexes){
-		user_scale[degree] =  notes[scale_indexes[i]];
-		degree= degree + 1;
+	//find notes in notes array that match indexes for chosen scale and assign to new array
+	for(var i = 0; i < scale_indexes.length; i++){
+		user_scale[i] =  notes[scale_indexes[i]];		
+	}
+	//draw notes to grid:
+	//first, start with scales to be started on spaces
+	if((user_scale[0].charAt() == "B")){
+		for(var i = 0; i < user_scale.length; i++){
+			//get first letter of div for note to be drawn to
+			var div_id = user_scale[i].charAt();
+				if(i % 2 == 0){
+					div_id = "#" + div_id.toLowerCase() + "_space";
+				}
+				else div_id = "#" + div_id.toLowerCase() + "_line";
+				var img_str = "<div id='img_" + i +"'><img src='images/whole_note.png'/></div>";
+				console.log(img_str);
+				$(div_id).append(img_str);
+				//create new class for each div with 
+				//$(div_id).addClass('note_' + i);
+				/*var number_px = (90 * i) +'px';
+				console.log(number_px);
+				$('#img_'+i +'').css('margin-left', 'number_px');*/
+				div_id = '';
+		}
+		
 		
 	}
+	/*$('#b_space').html("<img class = 'note' src='images/whole_note.png'/>");*/
 	var message = tonic + ' ' + selected_scale +':<br><br>'; 
 	for(i in user_scale){
 		message = message + (user_scale[i] + ' ');
