@@ -55,8 +55,9 @@
 				<div id="c_line" class="staff"></div>
 				<div id="b_space" class="staff"><div id="ledger_line"></div></div>
 				<div id="a_line" class="staff" ></div>			
-				<div id="scale_output"></div>
+				
 			</div> <!--end display div-->
+			<div id="scale_output"></div>
 		</div> <!--end outputdiv-->
 	</div> <!--end page div-->
 <script src="js/scale-finder.js"></script>
