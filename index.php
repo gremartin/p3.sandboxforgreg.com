@@ -25,8 +25,8 @@
 				<p>Accidental</p>
 				<select id="accidental">
 					<option value = "natural">natural</option>
-					<option value = "#">&#9839</option>
-					<option value = "b">&#9837</option>
+					<option value = "#">&#9839;</option>
+					<option value = "b">&#9837;</option>
 				</select>
 			</form>
 			<form id = "scale_selector">
@@ -45,20 +45,20 @@
 		</div> <!-- end of user_input div-->
 		<div id="output">
 			<div id="display">
-				<div id="clef"><img src='images/treble_clef.png'/></div>
+				<div id="clef"><img src='images/treble_clef.png' alt="treble clef" /></div>
 				<div id="g_space" class="staff"></div>
 				<div id="f_line" class="staff" ></div>
-				<div id="e_space"class="staff"></div>
-				<div id="d_line"class="staff" ></div>
+				<div id="e_space" class="staff"></div>
+				<div id="d_line" class="staff" ></div>
 				<div id="c_space" class="staff"></div>
 				<div id="b_line" class="staff" ></div>
 				<div id="a_space" class="staff"></div>
 				<div id="g_line" class="staff"></div>
-				<div id="f_space"class="staff" ></div>
+				<div id="f_space" class="staff" ></div>
 				<div id="e_line" class="staff" ></div>
 				<div id="d_space" class="staff"></div>
 				<div id="c_line" class="staff"></div>
-				<div id="b_space" class="staff"><div id="ledger_line"></div></div>
+				<div id="b_space" class="staff"></div>
 				<div id="a_line" class="staff" ></div>			
 				
 			</div> <!--end display div-->
@@ -67,6 +67,6 @@
 		</div> <!--end outputdiv-->
 	</div> <!--end page div-->
 <script src="js/scale-finder.js"></script>
-<body>
+</body>
 </html>
 
