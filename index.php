@@ -4,29 +4,29 @@
 <meta http-equiv="Content-Type" content ="text/html;charset=utf-8">
 <title>Javascript Scale/Mode Finder</title>
 <link rel="stylesheet" href="css/scale-finder.css" type="text/css">
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script> -->
-<script src="js/jquery-1.10.2.min.js"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </head>
 <body>
+	<div id="page_title"><h1>Internet Scale Finder</h1></div>
 	<div id="page">
 		<div id="user_input">
 			<form id="root_selector">
 				<p>Select your root note</p>
 				<select id="root_note">
-					<option>C</option>
-					<option>D</option>
-					<option>E</option>
-					<option>F</option>
-					<option>G</option>
-					<option>A</option>
-					<option>B</option>
+					<option value ="C">C</option>
+					<option value ="D">D</option>
+					<option value ="E">E</option>
+					<option value ="E">F</option>
+					<option value ="G">G</option>
+					<option value ="A">A</option>
+					<option value ="B">B</option>
 				</select>
 				<p>Accidental</p>
 				<select id="accidental">
-					<option>natural</option>
-					<option>#</option>
-					<option>b</option>
+					<option value = "natural">natural</option>
+					<option value = "#">&#9839</option>
+					<option value = "b">&#9837</option>
 				</select>
 			</form>
 			<form id = "scale_selector">
@@ -34,6 +34,11 @@
 				<select name="scale">
 					<option>major</option>
 					<option>minor</option>
+					<option>dorian</option>
+					<option>phrygian</option>
+					<option>lydian</option>
+					<option>mixolydian</option>
+					<option>locrian</option>
 				</select>				
 			</form>
 			<div id="button">Get Scale</div> <!-- Div for action button-->
@@ -58,6 +63,7 @@
 				
 			</div> <!--end display div-->
 			<div id="scale_output"></div>
+			<div id="scale_list"></div>
 		</div> <!--end outputdiv-->
 	</div> <!--end page div-->
 <script src="js/scale-finder.js"></script>
