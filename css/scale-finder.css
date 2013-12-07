@@ -37,11 +37,6 @@
 	font-family: serif;
 	
 	}
-#scale-output{
-	margin-top: 30px;
-	
-}
-
 #button{
 	width: 150px;
 	height: 30px;
@@ -51,9 +46,12 @@
 	background-color: red;
 	text-align:center;
 	cursor: pointer;
-}
+	}
 #scale_list{	
-	word-spacing: 2em;
+	word-spacing: 1em;
 	margin-left: 55px;
 	}
+h3{
+	margin-left: 55px;
 
+}

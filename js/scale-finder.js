@@ -183,7 +183,7 @@ $('#button').click(function(){
 					div_id = '';
 			}		
 	//define variables for printed output to page
-	var scale_name = tonic + ' ' + selected_scale +':<br><br>'; 
+	var scale_name = tonic + ' ' + selected_scale +':<br>'; 
 	var scale_list = '';
 	for(i in user_scale){
 		//replace characters not generally supported
